@@ -1,0 +1,92 @@
+/*!------------------------------------------------------------------
+[MAIN STYLESHEET]
+
+PROJECT:	Javascript
+VERSION:	V1
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+-------------------------------------------------------------------*/
+/*  typography 
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
+@font-face {
+  font-family: 'BwNistaInt-xBd';
+  src: url("../plugins/fonts/BwNistaInt-xBd.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+
+/*styling the nav/header*/
+.header{
+  background-color: darkslategray;
+  overflow: hidden;
+  padding: 20px 10px;
+  position: fixed;
+  width: 100%;
+}
+
+.header a{
+  float: left;
+  text-align: center;
+  color: white;
+  padding: 12px;
+  line-height: 25px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.header a.logo{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.header a:hover{
+  background-color: yellow;
+  color: black;
+}
+
+.header a.active{
+  background-color: yellow;
+  color: black;
+}
+.header-right{
+  float: right;
+}
+
+@media screen and (max-width: 500px){
+  .header a{
+    float: none;
+    text-align: left;
+    display: block;
+  }
+  .header-right{
+    float: none;
+  }
+}
+.Home{
+  background-color: yellowgreen;
+  padding: 150px 10px;
+  display: block;
+}
+.About{
+  background-color: violet;
+  padding: 150px 10px;
+}
+.Contact{
+  background-color: chocolate;
+  padding: 150px 10px;
+}
+
+h3{
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  text-transform: uppercase;
+}
